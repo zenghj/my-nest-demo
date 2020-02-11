@@ -1,5 +1,5 @@
 {
-  "name": "my-nest-blog",
+  "name": "my-nest-demo",
   "version": "0.0.1",
   "description": "",
   "author": "",
@@ -11,6 +11,7 @@
     "start": "nest start",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
+    "debug": "nodemon --config nodemon-debug.json",
     "start:prod": "node dist/main",
     "lint": "tslint -p tsconfig.json -c tslint.json",
     "test": "jest",
@@ -28,6 +29,7 @@
     "class-transformer": "^0.2.3",
     "config": "^3.2.5",
     "mongoose": "^5.8.11",
+    "nodemon": "^2.0.2",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.0",
     "rxjs": "^6.5.3"

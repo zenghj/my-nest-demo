@@ -8,13 +8,13 @@ import { Model } from 'mongoose';
 @Injectable()
 export class UserService {
   constructor(
-    @InjectModel(User.modelName) private readonly user: Model<User>) {}
+    @InjectModel(User.modelName) private readonly userModel: Model<User>) {}
 
   findOne(filter = {}): Promise<User> {
-    return this.user.findOne(filter).exec();
+    return this.userModel.findOne(filter).exec();
   }
   create(item) {
-    return this.user.create(item);
+    return this.userModel.create(item);
   }
 
   async register(dto: RegisterUserDto) {
